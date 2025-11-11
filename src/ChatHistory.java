@@ -17,22 +17,22 @@ public class ChatHistory {
 		int the = 0;
 		String max = "";
 		boolean lower = true;
-		for(String s : chat) {
-			if(!(s.equals(s.toLowerCase()))) lower = false;
-			if(s.length() > max.length()) max = s;
-			if(s.toLowerCase().equals("the"))
-			if(words.indexOf(s.toLowerCase()) == -1) chat.add(s.toLowerCase());
+		for(int i = 0; i < chat.size(); i++) {
+			if(!(chat.get(i).equals(chat.get(i).toLowerCase()))) lower = false;
+			if(chat.get(i).length() > max.length()) max = chat.get(i);
+			if(chat.get(i).toLowerCase().equals("the")) the++;
+			if(words.indexOf(chat.get(i).toLowerCase()) == -1) words.add(chat.get(i).toLowerCase());
 		}
 		System.out.println("Chat report: \n" +
 						 "You used " + chat.size() + " words.\n" +
 						 "You used " + words.size() + " unique words.\n" +
-						 "You used \'the\' " + the + " many time(s).\n" + 
+						 "You used \'the\' " + the + " time(s).\n" + 
 						 "Your longest word was: " + max + "\n" +
 						 "Your words where all lowercase? " + lower + "\n" +
 						 "Condesed Chat History: \n");
 	
-		for(String s : words) {
-			System.out.print(s + " ");
+		for(int i = 0; i < words.size(); i++) {
+			System.out.print(words.get(i) + " ");
 		}
 	}
 }
