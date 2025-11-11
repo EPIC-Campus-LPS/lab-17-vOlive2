@@ -14,8 +14,10 @@ public class ChatHistory {
 				chat.add(s);
 			}
 		}
+		int the = 0;
 		for(String s : chat) {
-			if(words.indexOf(s) == -1) chat.add(s);
+			if(s.toLowerCase().equals("the"))
+			if(words.indexOf(s.toLowerCase()) == -1) chat.add(s.toLowerCase());
 		}
 	}
 }
