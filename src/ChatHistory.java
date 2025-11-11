@@ -29,7 +29,9 @@ public class ChatHistory {
 		System.out.print("Chat report: \n" +
 						 "You used " + chat.size() + " words." +
 						 "You used " + words.size() + " unique  words." +
-						 "");
+						 "You used \'the\' " + the + " many time(s)." + 
+						 "Your longest word was: " + max +
+						 );
 
 		
 	}
