@@ -23,16 +23,16 @@ public class ChatHistory {
 			if(s.toLowerCase().equals("the"))
 			if(words.indexOf(s.toLowerCase()) == -1) chat.add(s.toLowerCase());
 		}
+		System.out.println("Chat report: \n" +
+						 "You used " + chat.size() + " words.\n" +
+						 "You used " + words.size() + " unique words.\n" +
+						 "You used \'the\' " + the + " many time(s).\n" + 
+						 "Your longest word was: " + max + "\n" +
+						 "Your words where all lowercase? " + lower + "\n" +
+						 "Condesed Chat History: \n");
+	
 		for(String s : words) {
 			System.out.print(s + " ");
 		}
-		System.out.print("Chat report: \n" +
-						 "You used " + chat.size() + " words." +
-						 "You used " + words.size() + " unique  words." +
-						 "You used \'the\' " + the + " many time(s)." + 
-						 "Your longest word was: " + max +
-						 );
-
-		
 	}
 }
