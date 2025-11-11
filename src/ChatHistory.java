@@ -15,7 +15,9 @@ public class ChatHistory {
 			}
 		}
 		int the = 0;
+		String max = "";
 		for(String s : chat) {
+			if(s.length() > max.length()) max = s;
 			if(s.toLowerCase().equals("the"))
 			if(words.indexOf(s.toLowerCase()) == -1) chat.add(s.toLowerCase());
 		}
