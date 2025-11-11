@@ -15,7 +15,7 @@ public class ChatHistory {
 			}
 		}
 		for(String s : chat) {
-			chat.add(s);
+			if(words.indexOf(s) == -1) chat.add(s);
 		}
 	}
 }
