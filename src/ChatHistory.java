@@ -23,6 +23,14 @@ public class ChatHistory {
 			if(s.toLowerCase().equals("the"))
 			if(words.indexOf(s.toLowerCase()) == -1) chat.add(s.toLowerCase());
 		}
+		for(String s : words) {
+			System.out.print(s + " ");
+		}
+		System.out.print("Chat report: \n" +
+						 "You used " + chat.size() + " words." +
+						 "You used " + words.size() + " unique  words." +
+						 "");
+
 		
 	}
 }
