@@ -16,10 +16,13 @@ public class ChatHistory {
 		}
 		int the = 0;
 		String max = "";
+		boolean lower = true;
 		for(String s : chat) {
+			if(!(s.equals(s.toLowerCase()))) lower = false;
 			if(s.length() > max.length()) max = s;
 			if(s.toLowerCase().equals("the"))
 			if(words.indexOf(s.toLowerCase()) == -1) chat.add(s.toLowerCase());
 		}
+		
 	}
 }
