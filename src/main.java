@@ -4,7 +4,6 @@ public class main {
 	    board.addScore("DEF", 200);  
 	    board.addScore("GHI", 250);  
 	    board.addScore("ABC", 100);  
-	   
 	    board.addScore("JKL", 300);  
 	    board.addScore("MNO", 205);  
 	  
