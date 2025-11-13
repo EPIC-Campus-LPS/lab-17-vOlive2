@@ -9,5 +9,5 @@ public class Score {
 	public void setScore(int s) {score = s;}
 	public String getName() {return name;}
 	public int getScore() {return score;}
-	@Override public String toString() {return ("");}
+	@Override public String toString() {return name + ": " + score + ", ";}
 }
